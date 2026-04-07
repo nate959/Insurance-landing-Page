@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance for Fortified Homes | Knockout Inspections</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-decor blob-1"></div>
+    <div class="background-decor blob-2"></div>
+    <div class="background-decor blob-3"></div>
+    
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-red">Knockout</span><span class="logo-dark">Inspections</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-layout">
+        <div class="content-column">
+            <section class="hero">
+                <h1>Insurance for Fortified Homes—<span class="text-red">Done Right</span></h1>
+                <p class="subtitle">At Knockout Inspections, we don’t sell insurance. We just certified your roof, and we know exactly who can get you the premium rates you deserve.</p>
+            </section>
+
+            <section class="content-block">
+                <h2 class="block-title">Why Knockout?</h2>
+                <p class="block-lead">Most average insurance agents don’t fully understand Fortified homes, which means they leave your money on the table. <strong>We don't let that happen.</strong></p>
+                <ul class="feature-list">
+                    <li>Over a decade of Fortified experience</li>
+                    <li>Thousands of inspections completed</li>
+                    <li>Deep knowledge of what actually qualifies for extreme wind discounts</li>
+                    <li>We know how to position your home correctly to the right partners</li>
+                </ul>
+                <div class="alert-box">
+                    👉 That means you secure the best pricing without missing a single discount.
+                </div>
+            </section>
+
+            <section class="content-block">
+                <h2 class="block-title">We Connect You to the True Experts</h2>
+                <p class="block-lead" style="margin-bottom: 1.5rem;">Instead of you calling around or getting flooded with calls… Here is what happens:</p>
+                <ul class="feature-list">
+                    <li>We package your specific Fortified Home features.</li>
+                    <li>We hand off your profile to our exclusive, trusted insurance partner who specializes in Fortified properties.</li>
+                    <li>Our partner shops your policy through a carefully selected group of carriers.</li>
+                    <li>They bring the best, heavily-discounted options directly to you.</li>
+                </ul>
+                <div class="alert-box text-green">
+                    👉 No spam. No 20 phone calls. Just one trusted partner bringing you real options.
+                </div>
+            </section>
+
+            <section class="content-block bg-glass-dark">
+                <h2 class="block-title text-gold">You Stay in Control</h2>
+                <p class="block-lead" style="margin-bottom: 2rem;">We only work with a trusted insurance partner and your information is handled carefully.</p>
+                
+                <div class="check-list">
+                    <p>❌ You will <strong>NOT</strong> be blasted to a dozen random companies</p>
+                    <p>❌ You will <strong>NOT</strong> get overwhelmed with a call center</p>
+                    <p>✅ You will get a focused, professional quote from our exclusive expert</p>
+                </div>
+            </section>
+
+            <section class="content-block">
+                <h2 class="block-title">How It Works</h2>
+                <ol class="step-list">
+                    <li><strong>Submit your info</strong> (takes 60 seconds)</li>
+                    <li><strong>We pass</strong> your verified Fortified details to our partner</li>
+                    <li><strong>They shop</strong> your exact risk with premium carriers</li>
+                    <li><strong>You receive</strong> your absolute best quoted options</li>
+                </ol>
+            </section>
+        </div>
+
+        <div class="form-column">
+            <div class="sticky-wrapper">
+                <form id="auditForm" class="glass-form">
+                    <div class="form-header">
+                        <h2>See How Much You Can Save</h2>
+                    </div>
+
+                    <div class="form-step active" id="step1">
+                        <div class="input-group">
+                            <input type="text" id="firstName" name="firstName" required placeholder="First Name">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="lastName" name="lastName" required placeholder="Last Name">
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" name="email" required placeholder="Email Address">
+                        </div>
+                        <div class="input-group">
+                            <input type="tel" id="phone" name="phone" required placeholder="Phone Number">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="address" name="address" required placeholder="Property Address">
+                        </div>
+
+                        <!-- Maintained so your 30% ratio trick still works perfectly in Agency Zoom -->
+                        <div class="input-group split hide-labels" style="margin-top: 1.5rem;">
+                            <div>
+                                <label class="floating-label">Current Premium</label>
+                                <input type="number" id="currentPremium" name="currentPremium" placeholder="Current Premium ($)" required>
+                            </div>
+                            <div>
+                                <label class="floating-label">Renewal Date</label>
+                                <input type="month" id="renewalDate" name="renewalDate" required>
+                            </div>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I agree to be safely contacted regarding insurance quote options through Knockout’s trusted insurance partner.</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">Send to the Experts</button>
+                    </div>
+
+                    <div class="form-success" id="successState" style="display: none;">
+                        <div class="success-icon">&#10003;</div>
+                        <h2>Profile Received!</h2>
+                        <p>We are packaging your Fortified home features and our partner will be in touch shortly.</p>
+                    </div>
+                    
+                    <div class="form-footer">
+                        <p>Insurance quotes are provided through an exclusive licensed insurance partner working directly with Knockout Inspections.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
